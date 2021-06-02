@@ -20,6 +20,112 @@
   <div>
     <form>
       <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="numCaterpillars">How Many Caterpillars:</label>
+            <input id="numCaterpillars" class="form-control" type="number" min="1">
+          </div>
+
+          <div class="form-group">
+            <label for="colorCaterpillar">What Color of Caterpillar?:</label>
+            <input id="colorCaterpillar" class="form-control" type="color">
+          </div>
+
+          <div class="form-group">
+            <label for="deliveryDate">When Do You Want Your Caterpillars?:</label>
+            <input id="deliveryDate" class="form-control" type="date">
+          </div>     
+        </div>
+
+        <div class="col-6">
+          <legend class="col-form-label">
+            Type of Caterpillar
+          </legend>
+
+          <div class="form-check">
+            <input 
+              class="form-check-input" 
+              type="radio" 
+              id="caterpillarType1"
+              name="caterpillarType"
+              value="Butterfly"
+              checked
+            >
+            <label 
+              class="form-check-label"
+              for="caterpillarType1"
+            >Butterfly</label>
+          </div>
+
+          <div class="form-check">
+            <input 
+              class="form-check-input" 
+              type="radio" 
+              id="caterpillarType2"
+              name="caterpillarType"
+              value="Moth"
+            >
+            <label 
+              class="form-check-label"
+              for="caterpillarType2"
+            >Moth</label>
+          </div>    
+        </div>
+
+        <div class="col-6">
+          <legend class="col-form-label">
+            Caterpillar Superpowers Requested
+          </legend>
+          
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="caterpillarPowers1"
+              name="caterpillarPowers1"
+              value="Poisonous"
+            >
+            <label
+              class="form-check-label"
+              for="caterpillarPowers1"
+            >Poisonous</label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="caterpillarPowers2"
+              name="caterpillarPowers2"
+              value="Spiny"
+            >
+            <label
+              class="form-check-label"
+              for="caterpillarPowers2"
+            >Spiny</label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="caterpillarPowers3"
+              name="caterpillarPowers3"
+              value="Fuzzy"
+            >
+            <label
+              class="form-check-label"
+              for="caterpillarPowers3"
+            >Fuzzy</label>
+          </div>
+        </div>
+
+      </div>
+        
+
+      <hr />
+
+      <div class="row">
         <div class="col">
           <div class="form-group">
             <label for="firstName">First Name:</label>
@@ -33,6 +139,11 @@
             <input id="lastName" class="form-control" type="text">
           </div>
         </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input id="email" class="form-control" type="email">
       </div>
       
       <div class="form-group">
@@ -51,7 +162,11 @@
         <div class="col">
           <div class="form-group">
             <label for="state">State:</label>
-            <input id="state" class="form-control" type="text">
+            <select id="state" class="form-control">
+              <option>Oregon</option>
+              <option>Washington</option>
+              <option>California</option>
+            </select>
           </div>
         </div>
 
@@ -61,7 +176,7 @@
             <input id="zipcode" class="form-control" type="text">
           </div>
         </div>
-      </div>
+      </div>      
 
       <button type="submit" class="btn">Buy stuff!</button>
     </form>
@@ -72,11 +187,33 @@
     <div class="card-body">
       <h2>Receipt</h2>
       <dl>
+        <dt>Number Ordered:</dt>
+        <dd class="numCaterpillars"></dd>
+
+        
+        <dt>Color:</dt>
+        <dd class="colorCaterpillar"></dd>
+
+        <dt>Type of Caterpillar:</dt>
+        <dd class="caterpillarType"></dd>
+
+        <dt>Delivery Date:</dt>
+        <dd class="deliveryDate"></dd>
+
+        <dt>Caterpillar Powers:</dt>
+        <dd class="caterpillarPowers"></dd>
+
+        <div></div>
+        <div></div>
+
         <dt>First Name:</dt>
         <dd class="firstName"></dd>
 
         <dt>Last Name:</dt>
         <dd class="lastName"></dd>
+
+        <dt>Email:</dt>
+        <dd class="email"></dd>
 
         <dt>Address:</dt>
         <dd class="address"></dd>

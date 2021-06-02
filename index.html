@@ -15,42 +15,114 @@
 </head>
 <body>
 <div class="container">
-  <h1>Caterpillars</h1>
+  <h1>Caterpillar Emporium</h1>
 
   <div>
     <form>
-      <div class="form-group">
-        <label for="firstName">First Name:</label>
-        <input id="firstName" class="form-control" type="text">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input id="firstName" class="form-control" type="text">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label for="lastName">Last name:</label>
+            <input id="lastName" class="form-control" type="text">
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="lastName">Last name:</label>
-        <input id="lastName" class="form-control" type="text">
-      </div>
+      
       <div class="form-group">
         <label for="address">Address:</label>
         <input id="address" class="form-control" type="text">
       </div>
-      <div class="form-group">
-        <label for="city">City: </label>
-        <input id="city" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="state">State:</label>
-        <input id="state" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="zipcode">Zipcode:</label>
-        <input id="zipcode" class="form-control" type="text">
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="city">City: </label>
+            <input id="city" class="form-control" type="text">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label for="state">State:</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label for="zipcode">Zipcode:</label>
+            <input id="zipcode" class="form-control" type="text">
+          </div>
+        </div>
       </div>
 
       <button type="submit" class="btn">Buy stuff!</button>
     </form>
   </div>
 
-  <div id="receipt">
+
+  <div id="receipt" class="card">
+    <div class="card-body">
+      <h2>Receipt</h2>
+      <dl>
+        <dt>First Name:</dt>
+        <dd class="firstName"></dd>
+
+        <dt>Last Name:</dt>
+        <dd class="lastName"></dd>
+
+        <dt>Address:</dt>
+        <dd class="address"></dd>
+
+        <dt>City:</dt>
+        <dd class="city"></dd>
+
+        <dt>State:</dt>
+        <dd class="state"></dd>
+
+        <dt>Zipcode:</dt>
+        <dd class="zipcode"></dd>
+      </dl>
+    </div>
   </div>
 </div>
   
 </body>
 </html>
+
+<!--
+- get inputted values when we hit submit button
+- figure out what the HTML in the receipt will look like
+- display those values in the receipt div
+
+- add in a select input
+ - replace the "state" with select
+
+- add in a number input
+  - how many caterpillars they want
+
+- add in a color input
+  - what color for the caterpillar
+
+- add in some radio options
+  - moth or butterfly
+
+- add in an email input
+  - user email
+
+- add in a date input
+  - when to deliver caterpillars
+
+- add in a checkbox input
+  - caterpillar powers
+
+- add styling to make it look nice
+
+-->

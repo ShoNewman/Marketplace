@@ -1,0 +1,13 @@
+dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+dt {
+  text-align: right;
+}
+dd {
+  margin-bottom: 0;
+}
